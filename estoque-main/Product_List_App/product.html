@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Quickstock - estoque</title>
+        <link rel="stylesheet" href="./product.css"/>
+    </head>
+    <body>
+        <div class="titulo">
+            <h1>Estoque</h1>
+        </div>
+        <div class="product-app-container">
+            <div class="product-app-wrapper">
+                <div class="formbackg">
+                <form action="javascript:;" class="form" id="form">
+                    <div class="form1">
+                    <label>Nome</label>
+                    <input class="name"
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Digite Seu Nome"
+                        required
+                    />
+                </div>
+
+                    <div class="form2">
+                    <label>Quantidade</label>
+                    <input class="quantity"
+                        type="number"
+                        name="quantity"
+                        id="quantity"
+                        placeholder="Digite a Quantidade"
+                        required
+                    />
+                </div>
+
+                    <div class="form3">
+                    <label>Preço</label>
+                    <input class="price"
+                        type="number"
+                        name="price"
+                        id="price"
+                        placeholder="Digite o Preço"
+                        required
+                    >
+                </div>
+
+                    <div class="form4">
+                    <label>Preço Total</label>
+                    <input class="total-price"
+                        type="number"
+                        name="total_price"
+                        id="total_price"
+                        placeholder="Preço Total"
+                        required
+                    />
+                </div>
+
+                    <div class="button">
+                        <button class="createItem" onclick="createItem()">Criar Item</button>
+                    </div>
+                </form>
+            </div>
+
+                <div class="table-wrapper">
+                    <table class="table">
+                        <thead>
+                            <tr id="tr">
+                                <th>Nome</th>
+                                <th>Quantidade</th>
+                                <th>Preço</th>
+                                <th>Preço Total</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <script src="./product.js"></script>
+    </body>
+</html>
